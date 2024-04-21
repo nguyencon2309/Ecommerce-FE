@@ -23,7 +23,7 @@ export const ProductCard = () => {
                         count={5}
 
                         size={24}
-                        value="3.8"
+                        value={3.8}
                         edit={false}
                         activeColor="#ffd700"
                     />

@@ -331,3 +331,21 @@ footer .social_icons a{
   display: block;
 }
 /* Pruduct Card Ends*/
+
+/* Special Product */
+.special-product-card {
+  padding: 20px 10px;
+  border-radius: 18px;
+  background-color: white;
+}
+.special-product-card .discount-till > span {
+  background-color: #eb353b;
+}
+/* Special Product End*/
+
+/* Famous Wrapper */
+.famous-wrapper .famous-content{
+  top:30px;
+  left:20px
+}
+/* Famous Wrapper End */
