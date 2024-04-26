@@ -483,3 +483,47 @@ footer .social_icons a{
   top:17%;
 }
 /* Our Store End */
+
+
+/* Blogs */
+/* Blogs End */
+
+
+/* Contact page */
+.contact-liner-wrapper {
+  background-color: white;
+  border-radius: 15px;
+  gap:15px;
+  padding:20px
+}
+.contact-liner-wrapper >div{
+  width: 40%;
+}
+.contact-title{
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 35px;
+  text-align:left;
+  margin-top: 0;
+}
+.contact-liner-wrapper form .form-control{
+  background-color: var(--color-f5f5f7);
+  border-radius: 10px;
+  border-color: transparent;
+}
+.contact-liner-wrapper ul{
+  list-style: none;
+}
+.contact-liner-wrapper ul li{
+  display: flex;
+  text-align: center;
+  color:var(--color-777777);
+}
+.contact-liner-wrapper  li > *{
+  color:var(--color-777777);
+  margin-bottom: 0;
+  margin-left: 3px;
+}
+/* Contact page End */
+
+
