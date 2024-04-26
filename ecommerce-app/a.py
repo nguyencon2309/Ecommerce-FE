@@ -39,10 +39,123 @@
 # s = 0
 # for i in range(0,n,k):
 #     s+=(arr[i]-1)*2
-# print(s)    
+# print(s)
+def phi(n):
+    m=n
+    s=1
+    t=1
+    for i in range(2,int(n**0.5)+2):
+        if n%i==0:
+            
+            while n%i==0:
+                n//=i
+            m-=m//i
+    if n>1:
+        m-=m//n  
+    return m      # phi(a*b) = phi(a)*phi(bs)   
+            
+def c(n):
+    s=0
+    for i in range(1,n+1):
+        s+=phi(i)
+    return s    
+    
+print(phi(1),phi(2),phi(3),phi(4),phi(5))
+print(c(5)-1)
+def g_cd(x,y):
+    while y != 0:
+        x, y = y, x % y
+    return x
+s=0
+for i in range(1,6):
+    for j in range(i+1,6):
+        if g_cd(i,j)==1:
+            s+=1
+            
+print(s)            
+"""
+s="112233445566778899"
 
+arr=[0]*10
+for i in s:
+    arr[int(i)]+=1
+s0=0
+s1=0
+print(arr)
+for i in range(1,10):
+    for j in range(i+1,10):
+        if i%j==0 or j%i==0:
+            s0=s0+arr[i]*arr[j]
+    s0=s0+arr[i]*(arr[i]-1)//2
+print(s0)
+
+for i in range(len(s)):
+    for j in range(i+1,len(s)):
+        if int(s[i])%int(s[j])==0 or int(s[j])%int(s[i])==0:s1+=1
+print(s1)        
+"""
+
+
+"""
+# trò chơi tìm kho báu
+import random
+wa = "~"
+gone = 'X'
+kb = "$"
+ocean = [[wa for _ in range(3)]for _ in range(3)]
+x , y = random.randint(0,2), random.randint(0,2)
+
+tt=1
+def check(xi,yi):
+    if xi>2 or yi>2: return 0
+    
+    elif ocean[xi][yi]==gone:#da di
+        return 1
+    elif xi==x and yi ==y:
+        ocean[xi][yi]=kb
+        return 3   
+    elif ocean[xi][yi]==wa:#chua di, ko phai ko bau
+        ocean[xi][yi]=gone
+        return 2
+     
+def void():
+    print("Các ngươi muốn lấy kho báu của ta à ...\n")
+    input()
+    print("Vậy thì hãy dong buồm ra khơi ...\n")
+    input()
+    print("Và tự mình tìm lấy")
+    input()
+    print("Chào mừng ngươi đến với Đại hải trình truy tìm kho báu")
+    print("Hãy dong buồm ra khơi nào")
+def print_DHT():
+    for i in range(3):
+        print(" ".join(ocean[i]))
+        
+    print()    
+void()
+
+
+while tt:
+    print_DHT()
+    wx, wy = map(int,input("Nhập toạ độ đi nào thuyền trưởng : ").split()) 
+    c = check(wx,wy)
+    if c==0:
+        print("Toạ độ không hợp lệ. Hãy nhập giá trị từ 0 đến 2")
+    elif c==2:
+        print("Không có kho báu ở vị trí này hãy thử lại nào!") 
+    elif c==1:
+        print("Người đã đi qua vị trí này rồi hãy thử lại vị trí khác")       
+    elif c==3:
+        tt=0
+        print_DHT()
+        print("Chúc mừng ngươi đã tìm ra kho báu của ta!\nTất cả là của ngươi tất!")
+        
+"""
+
+"""
 # trò chơi con mực
 # 0 la nguoi,1 la may
+
 import random
 bi=[10,10]
 g=[10,10]
@@ -93,7 +206,7 @@ while bi[0]*bi[1]>0:
     luotchoi+=1  
 print("Máy thắng" if bi[1]>bi[0] else "Bạn thắng")  
 print(bi)
-
+"""
 
 
         
@@ -101,7 +214,7 @@ print(bi)
 
 
 
-
+"""
 
 hs = ["a","b","c","d","e"]
 fr = []
@@ -174,3 +287,4 @@ print(k)
 #     n, k = map(int,input().split())
 
 
+"""

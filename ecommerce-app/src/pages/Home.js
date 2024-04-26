@@ -218,9 +218,40 @@ const Home = () => {
       <section className='famous-wrapper py-3 home-wrapper-2'>
         <div className='container-xxl'>
           <div className='row'>
+          <div className='col-3'>
+              <div className='famous-card position-relative text-white'>
+                <img className='img-fluid' src='images/famous-2.jpg' alt='famous'></img>
+                <div className='famous-content position-absolute'>
+                  <h6>Big Screen</h6>
+                  <h5>Smart Watches Serious 7</h5>
+                  <p>For $399.00 or $16.25/mo for 24 mo</p>
+                </div>
+              </div>
+            </div>
             <div className='col-3'>
               <div className='famous-card position-relative'>
-                <img className='img-fluid' src='images/gr.svg' alt='famous'></img>
+                <img className='img-fluid' src='images/famous-1.jpg' alt='famous'></img>
+                <div className='famous-content position-absolute'>
+                  <h6>Big Screen</h6>
+                  <h5>Smart Watches Serious 7</h5>
+                  <p>For $399.00 or $16.25/mo for 24 mo</p>
+                </div>
+              </div>
+            </div>
+            
+            <div className='col-3'>
+              <div className='famous-card position-relative'>
+                <img className='img-fluid' src='images/famous-1.jpg' alt='famous'></img>
+                <div className='famous-content position-absolute'>
+                  <h6>Big Screen</h6>
+                  <h5>Smart Watches Serious 7</h5>
+                  <p>For $399.00 or $16.25/mo for 24 mo</p>
+                </div>
+              </div>
+            </div>
+            <div className='col-3'>
+              <div className='famous-card position-relative'>
+                <img className='img-fluid' src='images/famous-1.jpg' alt='famous'></img>
                 <div className='famous-content position-absolute'>
                   <h6>Big Screen</h6>
                   <h5>Smart Watches Serious 7</h5>

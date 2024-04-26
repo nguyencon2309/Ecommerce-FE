@@ -1,9 +1,14 @@
 import React from 'react'
 import ReactStars from "react-rating-stars-component";
-import { Link } from "react-router-dom"
-export const ProductCard = () => {
+import { Link,useLocation } from "react-router-dom"
+export const ProductCard = (props) => {
+    const {gird} = props;
+    
+    let location = useLocation();
+    
+    
     return (
-        <div className='col-2'>
+        <div className={` ${ location.pathname==="/store"? `gr-${gird}`:"col-2" } `}>
             <Link className='product-card position-relative' to=''>
                 <div className='wishlist-icon position-absolute'>
                     <Link>
@@ -11,8 +16,8 @@ export const ProductCard = () => {
                     </Link>
                 </div>
                 <div className='product-image'>
-                    <img src="images/watch.jpg" className='img-fluid' alt='product image'></img>
-                    <img src="images/acc.avif" className='img-fluid' alt='product image'></img>
+                    <img src="images/watch.jpg" className='img-fluid' alt='product_image'></img>
+                    <img src="images/acc.avif" className='img-fluid' alt='product_image'></img>
                 </div>
                 <div className='product-details'>
                     <h6 className='brand'>Rolex</h6>
@@ -27,6 +32,9 @@ export const ProductCard = () => {
                         edit={false}
                         activeColor="#ffd700"
                     />
+                    <p className={`description ${gird===12? "d-block":"d-none"}`}>
+                    Một người cha "chưa từng có cảm giác rung động trước bất kỳ ai" và một thằng bé con "không thích tiếp xúc với bất kỳ ai" đã trở nên "lầy lội" hơn bao giờ hết khi gặp được Ninh Tịch. Cả hai cha con đều vừa gặp đã yêu người phụ nữ này, một người mong muốn chiếm hữu
+                    </p>
                     <p className='price'>$100.00</p>
                 </div>
                 <div className='action-bar position-absolute'>
