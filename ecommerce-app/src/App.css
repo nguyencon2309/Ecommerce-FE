@@ -558,3 +558,23 @@ footer .social_icons a{
   align-items: center;
 }
 /* Compare Product Page End */
+/* Wish List Page  */
+.wishlist-card .cross{
+  top:15px;
+  right: 15px;
+  width: 20px;
+  cursor: pointer;
+
+}
+.wishlist-product-detail h5 .title{
+  font-size: 19px;
+  line-height: 22px;
+  font-weight: 500;
+  color: var(--color-1c1c1b);
+}
+.wishlist-product-detail h6 .price{
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 400;
+}
+/* Wish List Page End */
