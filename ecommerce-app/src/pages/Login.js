@@ -31,7 +31,8 @@ const Login = () => {
                             />
                         </div>
                         <div>
-                            <Link to='/ forgot-password'
+                            <Link 
+                            to='/forgot-password'
                             className="fg-pw">Forgot Password?</Link>
                             <div className="mt-3 d-flex justify-content-center gap-15 align-items-center">
                                 <button className="button border-0">Log In</button>

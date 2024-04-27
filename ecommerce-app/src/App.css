@@ -578,7 +578,7 @@ footer .social_icons a{
   font-weight: 400;
 }
 /* Wish List Page End */
-/* LogIn Page  */
+/* Auth Card  */
 .auth-card{
   background-color: white;
   padding: 100px;
@@ -612,4 +612,8 @@ footer .social_icons a{
   color: white;
   background-color: var(--color-131921);
 }
-/* LogIn Page End */
+.auth-card p{
+  font-size: 13px;
+  color: var(--color-777777);
+}
+/* Auth Card End */
