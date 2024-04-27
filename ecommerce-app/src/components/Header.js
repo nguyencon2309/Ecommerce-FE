@@ -23,6 +23,7 @@ const Header = () => {
       </header>
 
       <header className='header-upper py-1'>
+        <div className="container-xxl">
         <div className='row align-items-center'>
           <div className='col-2 align-items-center '>
             <h2 >
@@ -88,6 +89,7 @@ const Header = () => {
 
             </div>
           </div>
+        </div>
         </div>
       </header>
 
