@@ -4,6 +4,7 @@ import Meta from '../components/Meta'
 import ReactStars from "react-rating-stars-component";
 import { useState } from 'react';
 import { ProductCard } from '../components/ProductCard';
+import { Color } from '../components/Color';
 
 export const OurStore = () => {
     const [gird, setGird] = useState(3);
@@ -71,21 +72,7 @@ export const OurStore = () => {
                                     </div>
                                     <h3 className='sub-title'>Color</h3>
                                     <div >
-                                        <ul className='colors ps-0'>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                        </ul>
+                                        <Color/>
                                     </div>
                                     <h3 className='sub-title'>Size</h3>
                                     <div>
